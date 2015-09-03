@@ -37,10 +37,25 @@ body {
   background: #E4E4CA; }
   .content .side-nav {
     float: left;
-    width: 31.25%; }
+    width: 31.25%;
+    margin-bottom: 16px; }
   .content .article {
     float: right;
     width: 62.5%; }
+  .content button {
+    background: #50CBF0;
+    border-radius: 3px;
+    box-shadow: 0px 5px 0px #21bdec;
+    border: 0;
+    font-size: 17px;
+    padding: 6px 12px;
+    outline: 0; }
+    .content button:hover {
+      background: #21bdec;
+      box-shadow: 0 5px 0 #119ec9; }
+    .content button:active {
+      box-shadow: none;
+      margin-top: 5px; }
 
 .side-nav li {
   list-style-position: inside;
