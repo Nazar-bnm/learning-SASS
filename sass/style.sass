@@ -9,6 +9,12 @@ $color-silver: #707070
 $border-main: 1px solid $color-silver
 $margin: 16px
 $padding: 6px 12px
+$content-background: #E4E4CA
+=border-radius($radius)
+	-webkit-border-radius: $radius
+	-moz-border-radius: $radius
+	border-radius: $radius
+
 body
 	font: 100% $font-stack
 	color: $primary-color
@@ -18,6 +24,7 @@ body
 	margin: auto
 	.header
 		border: $border-main
+		+border-radius(10px)
 		h1
 			text-align: center
 .nav
@@ -28,6 +35,24 @@ body
 		background: $color-nav
 	a
 		padding: $padding
-		text-decoration: none
 		color: #fff
 		text-transform: uppercase
+.content
+	@extend .header
+	background: $content-background
+	.side-nav
+		float: left
+		width: 300px / 960px * 100%
+	.article
+		float: right
+		width: 600px / 960px * 100%
+.side-nav
+	li
+		list-style-position: inside
+		background-color: #E1E436
+	li:hover
+		background-color: #E49E48
+.clear-fix:after 
+	content: ""
+	display: table
+	clear: both
