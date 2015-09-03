@@ -1,15 +1,33 @@
+@import reset
+
 $font-stack:    Helvetica, sans-serif
 $primary-color: #333
+$color-nav: #426370
 $background-color: #F0F0F0
-$a: auto
-$width: 900px
-$c: center 
+$width: 900px 
+$color-silver: #707070
+$border-main: 1px solid $color-silver
+$margin: 16px
+$padding: 6px 12px
 body
 	font: 100% $font-stack
 	color: $primary-color
 .wrapper
 	width: $width
 	background: $background-color
-	margin: $a
-	h1
-		text-align: $c
+	margin: auto
+	.header
+		border: $border-main
+		h1
+			text-align: center
+.nav
+	ul
+		margin: $margin / 2
+	li
+		display: inline
+		background: $color-nav
+	a
+		padding: $padding
+		text-decoration: none
+		color: #fff
+		text-transform: uppercase

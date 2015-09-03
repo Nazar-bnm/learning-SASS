@@ -1,3 +1,9 @@
+html,
+body,
+ul {
+  margin: 0;
+  padding: 0; }
+
 body {
   font: 100% Helvetica, sans-serif;
   color: #333; }
@@ -6,7 +12,20 @@ body {
   width: 900px;
   background: #F0F0F0;
   margin: auto; }
-  .wrapper h1 {
-    text-align: center; }
+  .wrapper .header {
+    border: 1px solid #707070; }
+    .wrapper .header h1 {
+      text-align: center; }
+
+.nav ul {
+  margin: 8px; }
+.nav li {
+  display: inline;
+  background: #426370; }
+.nav a {
+  padding: 6px 12px;
+  text-decoration: none;
+  color: #fff;
+  text-transform: uppercase; }
 
 /*# sourceMappingURL=style.css.map */
